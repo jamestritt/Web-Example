@@ -1,0 +1,462 @@
+/**********************************
+Responsive navbar-brand image CSS
+- Remove navbar-brand padding for firefox bug workaround
+- add 100% height and width auto ... similar to how bootstrap img-responsive class works
+
+ADD CSS Rest
+
+
+
+***********************************/
+
+body{
+    background: #f7f7f7 !important;
+}
+
+.navbar-brand {
+  padding: 0px;
+    color: red;
+}
+.navbar-brand>img {
+    width: 15%;
+    padding: 15px;
+}
+
+a.navbar-brand {
+    margin-left: 30px !important;
+    margin-top: 30px;
+}
+
+.navbar-default {
+    background-color:transparent;
+    border-color: transparent;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #000 !important;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #921F8C  !important;
+    background-color: transparent;
+    font-size: 25px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    background-color: #921F8C;
+}
+
+/* CSS Transform Align Navbar Brand Text ... This could also be achieved with table / table-cells */
+.navbar-alignit .navbar-header {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    height: 50px;
+}
+.navbar-alignit .navbar-brand {
+	top: 50%;
+	display: block;
+	position: relative;
+	height: auto;
+	-webkit-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+	margin-right: 15px;
+    margin-left: 15px;
+}
+
+
+/* EXAMPLE 5 - Logo with Text*/
+.logo .navbar-brand {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    font-size: 25px;
+    line-height: 30px;
+    color: red !important;
+
+}
+.logo .navbar-brand>img {
+  padding: 7px 20px;
+}
+
+p.logotext {
+    margin-top: 10px;
+    color: #fff;
+}
+
+
+/*body {
+
+  background: url('../images/athletes-endurance-energy.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
+} 
+*/
+
+a{
+    color: #fff  !important;
+}
+
+a:hover{
+    text-decoration: none !important;
+    color: #921F8C  !important;
+}
+
+.container{
+    width: auto;
+}
+
+section.container.textbanner {
+    margin-top: 5%;
+}
+section.container{
+    margin-top: 120px;
+}
+
+.row{
+    margin-top: 10px;
+    margin: 0 auto;
+}
+
+#backgroundimage{
+    max-width: 100%;
+}
+.people {
+    height: auto;
+    width: auto;
+    padding-top: 20px;
+}
+
+.thumbnail {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #F9B85B;
+    border-color: #F9B85B;
+}
+
+.btn-primary:hover {
+    color: #fff !important;
+    background-color: #921F8C;
+    border-color: #921F8C ;
+}
+
+a.btn.btn-primary.textphoto {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 15px;
+    border-radius: 4px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.col-sm-3.sidebar {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+
+.col-sm-3{
+    position: relative;
+    display: block;
+    height: auto;
+    text-align: center;
+    
+}
+
+.col-sm-6 social {
+    width: 100%;
+    display: inline-block;
+    position: inherit;
+    padding-top: 7px;
+}
+
+
+.col-sm-8{
+    background: #fff;
+    -webkit-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    -moz-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+article.col-sm-8 {
+    height: 330px;
+    margin-left: 2%;
+}
+
+img.homepageimage {
+    width: 100%;
+    z-index: -999;
+    margin-top: -500px;
+}
+
+img.footerimage {
+    width: 100%;
+}
+
+img.logo {
+    width: 4%;
+    padding: 10px;
+    background-color: 0
+}
+
+img.image {
+    width: 100%;
+}
+
+img.circle.right {
+    width: 100%;
+}
+
+img.circle.left {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+
+
+.textphoto{
+    color: #000;
+    text-align: left;
+}
+
+.homepagebanner{
+    width: 100%;
+}
+
+.colorbartext{
+    width: auto;
+    text-align: center;
+    color: #fff;
+    margin-top: 7%;
+}
+
+p.logoName {
+    display: inline-block;
+    margin-left: 40%;
+    background-color: 0;
+    font-size: 50px;
+}
+
+.title--headlin{
+    font-size: 75px;
+    font-weight: bold;
+    color: #F9B85B;
+    text-align: center;
+    
+}
+
+.title__text{
+    font-weight: 100;
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+}
+
+h1.herotitle{
+    font-size: 75px;
+    font-weight: bold;
+    margin-top: 0px;
+    color: #fff;
+    background: #F9B85B;    
+    padding: 10px;
+}
+
+.person {
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+}
+
+.subtitle{
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+
+
+li{
+    color: #000;
+    list-style-type: none;
+    line-height: 10px;
+}
+
+h1.homepageherotext {
+    margin-left: 4%;
+    margin-bottom: 40px;
+    font-weight: bold;
+    width: auto;
+    color: #F9B85B;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+p.homepagesubherotext {
+    margin-bottom: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-weight: 100;
+}
+
+h3{
+    color: #F9B85B !important; 
+}
+
+h4{
+    text-align: center;
+}
+
+h4.athlete {
+    display: inline-block;
+}
+
+h6{
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    margin: 30px;
+
+}
+
+p#facts {
+    margin-top: 20px;
+}
+
+p.btn.btn-primary {
+    width: 100px;
+}
+
+.footertitle{
+    font-family: cursive;
+}
+
+.footer{
+    background-color: #1d282a;
+}
+
+.footerlink{
+    overflow: hidden;
+    line-height: 1.6em;
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+.footerlogo{
+     width: 12%;
+    display: inline;
+    position: inherit;
+}
+
+li.fafaicon {
+    display: inline-block;
+    width: 40px;
+    position: inherit;
+}
+
+
+#wrap{
+    background: #eee;
+    max-width: auto;
+    margin: 0 auto;
+    z-index: 1;
+    margin-left: 35%;
+}
+        
+#content{
+    color: black;
+    font-family: sans-serif;
+    font-size: 20pt;
+    text-align: left;
+    margin-top: 50px;
+    width: 500px;
+    border-radius: 20px;
+    transition: 2s;
+    line-height: 100px;
+    margin-bottom: 40px;
+    animation:fadeIn ease-in 5;
+    animation-fill-mode:forwards;
+    animation-duration:5s;
+    animation-iteration-count: 1;
+}
+        
+
+        
+#button{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #F9B85B;
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    border-radius: 4px;
+    margin: auto;
+    transition-delay: 2s;
+    transition: 5s;
+    margin-left: 800px;
+}
+        
+        
+#button:hover {
+    background-color: #921F8C;
+    color: #fff !important;
+    transition: background-color .5s ease-out;
+    text-align: center;
+}
+
+#button:active {
+    position: relative;
+    top: 1px;
+    left: 1px;
+}   
+
+
+@keyframes fadeIn { 
+    from { opacity:0; } 
+    to { opacity:1; } 
+}
+        
+        
+#button {
+    opacity:0;
+    animation:fadeIn ease-in 5;
+    animation-fill-mode:forwards;
+    animation-duration:5s;
+    animation-iteration-count: 1;
+}
+  
+
+.animation__title{
+    color: #F9B85B;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+        
+.animation__text{
+    color: #000;
+    line-height: initial;
+    font-weight: lighter;
+}
+
+
+@media (max-width: 600px) {
+
+    .logo .navbar-brand {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        font-size: 25px;
+        margin-top: -50px !important;
+    }
+}
